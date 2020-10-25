@@ -54,7 +54,9 @@ Weights:
 
 Prediction can be done on:    
 - new image using ```predict_image.py```  
-- video uisng ```predict_video.py```   
+- video uisng ```predict_video.py```  
+  - device_type = 0 for webcam  
+  - device_type = 'grandcentral.avi' for video  
 
 ### Citations
 This project was developed using the repo of [weizheliu](https://github.com/weizheliu/Context-Aware-Crowd-Counting) as a base.  
