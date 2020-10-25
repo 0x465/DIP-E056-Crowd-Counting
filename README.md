@@ -53,6 +53,9 @@ Weights:
 [part_B_train.pth.tar](https://drive.google.com/file/d/15yHdpxYdcWO4NHuZz_Okri9BFlaAP1c7/view?usp=sharing)
 
 Prediction can be done on:    
+```
+python predict_(type).py
+```
 - new image using ```predict_image.py```  
 - video uisng ```predict_video.py```  
   - device_type = 0 for webcam  
