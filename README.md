@@ -48,7 +48,7 @@ ROOT
 ```
 
 ### Prediction
-**NOTE**: please edit paths in scripts as needed
+**NOTE**: please edit paths in scripts as needed    
 Weights: 
 [part_B_train.pth.tar](https://drive.google.com/file/d/15yHdpxYdcWO4NHuZz_Okri9BFlaAP1c7/view?usp=sharing)
 
