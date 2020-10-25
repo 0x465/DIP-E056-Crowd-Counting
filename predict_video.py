@@ -89,7 +89,7 @@ if __name__ == '__main__':
                 # save image and video
                 # first and then every 10 frames
                 if iter_count == 0 or not iter_count % 10:
-                    save_path = ('...Input/DIP-E056-Crowd-Counting/output')
+                    save_path = ('...Output/DIP-E056-Crowd-Counting/output')
                     out_name = 'density_' + str(img_count) + '.png'
                     out_path = os.path.join(save_path, out_name)
                     frame.save(out_path)
