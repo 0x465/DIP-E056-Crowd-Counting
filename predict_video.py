@@ -51,7 +51,7 @@ def get_transform():
 
 if __name__ == '__main__':
     transform = get_transform()
-    model = load_model('part_B_pre.pth.tar')
+    model = load_model('part_B_train.pth.tar')
     # device_type = 0 for webcam 
     device_type = 'grandcentral.avi'
     cap, out, width, height = get_videocapture(device_type)
