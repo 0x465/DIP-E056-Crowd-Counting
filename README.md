@@ -74,7 +74,7 @@ To begin crowd counting, run the following python script with required arguments
 *video_type* : mp4, avi, etc
 
 ```python CC.py image img_path .../ROOT/images```   
-```python CC.py video vid_path .../ROOT/videos/*.video_type```
+```python CC.py video vid_path .../ROOT/videos/*.video_type```    
 ```python CC.py real_time device_id int```
 
 ### Citations
