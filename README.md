@@ -24,6 +24,8 @@ ShanghaiTech Dataset: [Kaggle](https://www.kaggle.com/tthien/shanghaitech-with-p
 1. Download/git clone repo.  
 2. Download and unzip ShanghaiTech folder into ROOT. 
 
+**NOTE**: please edit paths in scripts as needed before running.    
+
 Root directory should have the following hierachy:       
 **NOTE**: '*' files will only appear after running scipts.   
 ```
@@ -58,8 +60,7 @@ ROOT
 
 ```
 
-### Crowd Counting 
-**NOTE**: please edit paths in scripts as needed    
+### Crowd Counting  
 Weights: 
 [ShanghaiTech Part A](https://drive.google.com/file/d/1Z-atzS5Y2pOd-nEWqZRVBDMYJDreGWHH/view)   
 [ShanghaiTech Part B](https://drive.google.com/file/d/1zKn6YlLW3Z9ocgPbP99oz7r2nC7_TBXK/view)   
