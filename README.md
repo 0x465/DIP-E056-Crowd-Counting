@@ -17,8 +17,8 @@ The following libraries was used:
 - h5py
 
 ### Dataset
-Refer to following pages:   
-[ShanghaiTech Dataset](https://www.kaggle.com/tthien/shanghaitech-with-people-density-map)  
+Refer to following pages:     
+ShanghaiTech Dataset: [Kaggle](https://www.kaggle.com/tthien/shanghaitech-with-people-density-map)  
 
 ### Preprocessing Data  
 1. Download/git clone repo.  
