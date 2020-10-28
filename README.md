@@ -1,6 +1,8 @@
 # DIP-E056-Crowd-Counting
 
-This repo includes the implementation of Context Aware Crowd Counting.
+This repo includes the implementation of Context Aware Crowd Counting.  
+
+[video](https://drive.google.com/file/d/1TGm47qnQIB5qL25Gd6Gw_hczegNW7MPS/view?usp=sharing)
 
 ### Prerequisites
 Anaconda environment is strongly recommended.   
