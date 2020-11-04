@@ -62,8 +62,8 @@ ROOT
 
 ### Crowd Counting  
 Weights:    
-[ShanghaiTech Part A](https://drive.google.com/file/d/1Z-atzS5Y2pOd-nEWqZRVBDMYJDreGWHH/view)   
-[ShanghaiTech Part B](https://drive.google.com/file/d/1zKn6YlLW3Z9ocgPbP99oz7r2nC7_TBXK/view)   
+[ShanghaiTech Part A](https://drive.google.com/file/d/1Z-atzS5Y2pOd-nEWqZRVBDMYJDreGWHH/view) MAE: 66.4   
+[ShanghaiTech Part B](https://drive.google.com/file/d/1zKn6YlLW3Z9ocgPbP99oz7r2nC7_TBXK/view) MAE: 10.6     
 
 To begin crowd counting, run the following python script with required arguments:   
 - mode : {image, video, real_time}  
