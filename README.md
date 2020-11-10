@@ -34,6 +34,8 @@ ROOT
         |-- .....
   |-- out_image
         |-- ... *
+  |-- out_real_time
+        |-- ... *
   |-- out_video
         |-- ... *
   |-- images
