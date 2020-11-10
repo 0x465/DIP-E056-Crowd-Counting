@@ -154,7 +154,10 @@ if __name__ == '__main__':
                 # save image/video
                 if task == 1 or task == 2: 
                     if iter_count == 0 or not iter_count % 10:
-                        save_path = ('D:/Coding/DIP/Final/CSRNet-pytorch/out_video')
+                        if task == 1:
+                            save_path = ('D:/Coding/DIP/Final/CSRNet-pytorch/out_video')
+                        if task == 2:
+                            save_path = ('D:/Coding/DIP/Final/CSRNet-pytorch/out_real_time')
                         out_name = 'density_' + str(img_count) + '.png'
                         out_path = os.path.join(save_path, out_name)
                         Image.fromarray(frame).save(out_path)
