@@ -20,18 +20,14 @@ import dataset
 import time
 
 parser = argparse.ArgumentParser(description='PyTorch CSRNet')
-
 parser.add_argument('train_json', metavar='TRAIN',
                     help='path to train json')
 parser.add_argument('test_json', metavar='TEST',
                     help='path to test json')
-
 parser.add_argument('--pre', '-p', metavar='PRETRAINED', default=None,type=str,
                     help='path to the pretrained model')
-
 parser.add_argument('gpu',metavar='GPU', type=str,
                     help='GPU id to use.')
-
 parser.add_argument('task',metavar='TASK', type=str,
                     help='task id to use.')
 
@@ -63,11 +59,8 @@ def main():
     torch.cuda.manual_seed(args.seed)
     
     model = CSRNet()
-    
     model = model.cuda()
-    
     criterion = nn.MSELoss(size_average=False).cuda()
-    
     optimizer = torch.optim.SGD(model.parameters(), args.lr,
                                 momentum=args.momentum,
                                 weight_decay=args.decay)
@@ -105,11 +98,9 @@ def main():
         }, is_best,args.task)
 
 def train(train_list, model, criterion, optimizer, epoch):
-    
     losses = AverageMeter()
     batch_time = AverageMeter()
     data_time = AverageMeter()
-    
     
     train_loader = torch.utils.data.DataLoader(
         dataset.listDataset(train_list,
@@ -134,14 +125,10 @@ def train(train_list, model, criterion, optimizer, epoch):
         img = img.cuda()
         img = Variable(img)
         output = model(img)
-        
-        
-        
-        
+
         target = target.type(torch.FloatTensor).unsqueeze(0).cuda()
         target = Variable(target)
-        
-        
+
         loss = criterion(output, target)
         
         losses.update(loss.item(), img.size(0))
@@ -173,7 +160,6 @@ def validate(val_list, model, criterion):
     batch_size=args.batch_size)    
     
     model.eval()
-    
     mae = 0
     
     for i,(img, target) in enumerate(test_loader):
@@ -191,15 +177,12 @@ def validate(val_list, model, criterion):
         
 def adjust_learning_rate(optimizer, epoch):
     """Sets the learning rate to the initial LR decayed by 10 every 30 epochs"""
-    
-    
+
     args.lr = args.original_lr
     
     for i in range(len(args.steps)):
-        
         scale = args.scales[i] if i < len(args.scales) else 1
-        
-        
+
         if epoch >= args.steps[i]:
             args.lr = args.lr * scale
             if epoch == args.steps[i]:
