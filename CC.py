@@ -155,16 +155,16 @@ if __name__ == '__main__':
                 if task == 1 or task == 2: 
                     if iter_count == 0 or not iter_count % 10:
                         if task == 1:
-                            save_path = ('D:/Coding/DIP/Final/CSRNet-pytorch/out_video')
+                            save_path = ('.../out_video')
                         if task == 2:
-                            save_path = ('D:/Coding/DIP/Final/CSRNet-pytorch/out_real_time')
+                            save_path = ('.../out_real_time')
                         out_name = 'density_' + str(img_count) + '.png'
                         out_path = os.path.join(save_path, out_name)
                         Image.fromarray(frame).save(out_path)
                         img_count += 1
                     out.write(cv2.cvtColor((np.array(frame)), cv2.COLOR_BGR2RGB))
                 elif task == 0:
-                    save_path = ('D:/Coding/DIP/Final/CSRNet-pytorch/out_image')
+                    save_path = ('.../out_image')
                     out_name = 'density_' + str(iter_count) + '.png'
                     out_path = os.path.join(save_path, out_name)
                     Image.fromarray(frame).save(out_path)
